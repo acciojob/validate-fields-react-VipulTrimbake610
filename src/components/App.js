@@ -18,7 +18,7 @@ const App = () => {
         
         <label htmlFor="">Password:</label>
         <input type="password" onChange={(e)=>setA({...a,pwd:e.target.value})}/>
-        <p style={{color:"red"}}>{error}</p>
+        <p id="errorMessage" style={{color:"red"}}>{error}</p>
         <button onClick={handleClick}>Login</button>
     </div>
   )
